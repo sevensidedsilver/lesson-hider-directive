@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body ng-controller="lessonCtrl">
+
+
+  <li>{{ lesson }}</li>
+  <button ng-click="dayAlert({ lesson: lesson, day: lessonDay })"></button>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="./app.js"></script>
+  <script src="./lessonCtrl.js"></script>
+  <script src="./lessonService.js"></script>
+  <script src="./lessonHider.js"></script>
+
+</body>
+</html>
